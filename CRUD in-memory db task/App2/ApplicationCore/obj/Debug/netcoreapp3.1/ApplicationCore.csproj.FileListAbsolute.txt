@@ -1,0 +1,20 @@
+E:\  C#\App2\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.deps.json
+E:\  C#\App2\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.dll
+E:\  C#\App2\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
+E:\  C#\App2\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.csproj.AssemblyReference.cache
+E:\  C#\App2\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+E:\  C#\App2\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfoInputs.cache
+E:\  C#\App2\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfo.cs
+E:\  C#\App2\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.csproj.CoreCompileInputs.cache
+E:\  C#\App2\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.dll
+E:\  C#\App2\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.pdb
+C:\Users\User\Desktop\App2\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.deps.json
+C:\Users\User\Desktop\App2\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.dll
+C:\Users\User\Desktop\App2\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
+C:\Users\User\Desktop\App2\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\App2\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\App2\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfo.cs
+C:\Users\User\Desktop\App2\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\App2\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.dll
+C:\Users\User\Desktop\App2\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.pdb
+C:\Users\User\Desktop\App2\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.csproj.AssemblyReference.cache

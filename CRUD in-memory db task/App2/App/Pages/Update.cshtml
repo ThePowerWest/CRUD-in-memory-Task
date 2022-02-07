@@ -1,0 +1,89 @@
+﻿@page
+@model App.Pages.UpdateModel
+@{
+}
+<form asp-page="Update" method="post" class="row mt-4">
+    <br />
+    <br />
+    <h2>Редактирование данных о сотруднике</h2>
+    <br />
+
+    <input type="hidden" asp-for="Worker.Id" name="Worker.Id" />
+    <input type="hidden" asp-for="Worker.Profile.Id" name="Worker.Profile.Id" />
+
+    <table class="table">
+        <!--Fullname-->
+        <tr>
+            <th>
+                <label asp-for="Worker.Profile.Fullname">ФИО</label>
+            </th>
+            <td>
+                <input asp-for="Worker.Profile.Fullname" class="form-control" />
+                <span asp-validation-for="Worker.Profile.Fullname" class="text-danger"></span>
+            </td>
+        </tr>
+        <!--Date-->
+        <tr>
+            <th><label asp-for="Worker.Profile.Date">Дата рождения</label></th>
+            <td><input asp-for="Worker.Profile.Date" type="text" class="form-control" />
+            <span asp-validation-for="Worker.Profile.Date" class="text-danger"></span></td>
+            
+
+        </tr>
+        <!--Subdivision-->
+        <tr>
+            <th>
+                <label asp-for="Worker.Subdivision">Подразделение</label>
+            </th>
+            <td>
+                <input asp-for="Worker.Subdivision" class="form-control" />
+                <span asp-validation-for="Worker.Subdivision" class="text-danger"></span>
+            </td>
+        </tr>
+        <!--Position-->
+        <tr>
+            
+            <th>
+                <label asp-for="Worker.Position">Должность</label>
+            </th>
+            <td>
+                <input asp-for="Worker.Position" class="form-control" />
+                <span asp-validation-for="Worker.Position" class="text-danger"></span>
+            </td>
+        </tr>
+        <!--Salary-->
+        <tr>
+            <th>
+                <label asp-for="Worker.Salary">Оклад</label>
+            </th>
+            <td>
+                <input asp-for="Worker.Salary" class="form-control" />
+                <span asp-validation-for="Worker.Salary" class="text-danger"></span>
+            </td>
+        </tr>
+        <!--Email-->
+        <tr>
+            <th>
+                <label asp-for="Worker.Profile.Email">Email</label>
+            </th>
+            <td>
+                <input asp-for="Worker.Profile.Email" class="form-control" />
+                <span asp-validation-for="Worker.Profile.Email" class="text-danger"></span>
+            </td>
+        </tr>
+        <!--Phone-->
+        <tr>
+            <th>
+                <label asp-for="Worker.Profile.Phone">Телефон</label>
+            </th>
+            <td>
+                <input asp-for="Worker.Profile.Phone" class="form-control" />
+                <span asp-validation-for="Worker.Profile.Phone" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><input class="btn btn-outline-success" type="submit" value="Сохранить" /></td>
+        </tr>
+    </table>
+</form>

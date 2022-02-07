@@ -1,0 +1,26 @@
+E:\  C#\App2\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.deps.json
+E:\  C#\App2\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.dll
+E:\  C#\App2\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+E:\  C#\App2\Infrastructure\bin\Debug\netcoreapp3.1\ApplicationCore.dll
+E:\  C#\App2\Infrastructure\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
+E:\  C#\App2\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.AssemblyReference.cache
+E:\  C#\App2\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\  C#\App2\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfoInputs.cache
+E:\  C#\App2\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfo.cs
+E:\  C#\App2\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CoreCompileInputs.cache
+E:\  C#\App2\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CopyComplete
+E:\  C#\App2\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
+E:\  C#\App2\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb
+C:\Users\User\Desktop\App2\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.deps.json
+C:\Users\User\Desktop\App2\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.dll
+C:\Users\User\Desktop\App2\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+C:\Users\User\Desktop\App2\Infrastructure\bin\Debug\netcoreapp3.1\ApplicationCore.dll
+C:\Users\User\Desktop\App2\Infrastructure\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
+C:\Users\User\Desktop\App2\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\App2\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\App2\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\App2\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfo.cs
+C:\Users\User\Desktop\App2\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\App2\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CopyComplete
+C:\Users\User\Desktop\App2\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
+C:\Users\User\Desktop\App2\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb

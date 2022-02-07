@@ -1,0 +1,176 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+@{
+    var listItem = new List<SelectListItem>();
+    listItem.Add(new SelectListItem
+            {
+                Text = "По возрастанию",
+                Value = "0"
+            });
+    listItem.Add(new SelectListItem
+            {
+                Text = "По убыванию",
+                Value = "1"
+            });
+}
+
+
+<br />
+<div class="container" row p-0 m-0>
+    <div class="col-12">
+        <h2 class="text-info ml-2">Список сотрудников</h2>
+
+        <form asp-page="Index" method="get" class="row mb-2 ml-2">
+            @Html.DropDownList("OrderId", listItem, "", new { style = "width: 70%", @class = "form-control" })
+            <button type="submit" class="btn btn-info ml-3">Обновить</button>
+        </form>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>ФИО</th>
+                    <th>Дата рождения</th>
+                    <th>Подразделение</th>
+                    <th>Должность</th>
+                    <th>Оклад</th>
+                    <th>Email</th>
+                    <th>Телефон</th>
+                    <th></th>
+                    <th><a class="btn btn-info form-control text-white" data-toggle="modal" data-target="#createModal" data-backdrop="static">Создать</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var worker in Model.ongetWorkers)
+                {
+                    <tr>
+                        <th scope="row">@worker.Id</th>
+                        <td>@worker.Profile.Fullname</td>
+                        <td>@worker.Profile.Date</td>
+                        <td>@worker.Subdivision</td>
+                        <td>@worker.Position</td>
+                        <td>@worker.Salary</td>
+                        <td>@worker.Profile.Email</td>
+                        <td>@worker.Profile.Phone</td>
+                        <td><a class="btn btn-success form-control text-white" asp-page="Update" asp-route-id="@worker.Id">Редактировать</a></td>
+                        <td>
+                            <a class="btn btn-danger form-control text-white" asp-page="Index" asp-route-id="@worker.Id" asp-page-handler="Delete"
+                           onclick="return confirm('Вы действительно хотите удалить данного сотрудника?')">Удалить</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+<!--CreateModal-->
+<div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="createModalLabel">Добавление нового сотрудника</h5>
+                <button class="btn-close btn-dark" data-dismiss="modal" aria-label="close"></button>
+            </div>
+            <div class="modal-body">
+                <form asp-page="Index" method="post">
+                    <table class="table">
+                        <!--Fullname-->
+                        <tr>
+                            <th>
+                                <label asp-for="Worker.Profile.Fullname">ФИО</label>
+                            </th>
+                            <td>
+                                <input asp-for="Worker.Profile.Fullname" class="form-control" />
+                                <span asp-validation-for="Worker.Profile.Fullname" class="text-danger"></span>
+                            </td>
+                        </tr>
+                        <!--Date-->
+                        <tr>
+                            <th><label asp-for="Worker.Profile.Date">Дата рождения</label></th>
+                            <td>
+                                <input asp-for="Worker.Profile.Date" type="text" class="form-control" />
+                                <span asp-validation-for="Worker.Profile.Date" class="text-danger"></span>
+                            </td>
+
+
+                        </tr>
+                        <!--Subdivision-->
+                        <tr>
+                            <th>
+                                <label asp-for="Worker.Subdivision">Подразделение</label>
+                            </th>
+                            <td>
+                                <input asp-for="Worker.Subdivision" class="form-control" />
+                                <span asp-validation-for="Worker.Subdivision" class="text-danger"></span>
+                            </td>
+                        </tr>
+                        <!--Position-->
+                        <tr>
+
+                            <th>
+                                <label asp-for="Worker.Position">Должность</label>
+                            </th>
+                            <td>
+                                <input asp-for="Worker.Position" class="form-control" />
+                                <span asp-validation-for="Worker.Position" class="text-danger"></span>
+                            </td>
+                        </tr>
+                        <!--Salary-->
+                        <tr>
+                            <th>
+                                <label asp-for="Worker.Salary">Оклад</label>
+                            </th>
+                            <td>
+                                <input asp-for="Worker.Salary" class="form-control" />
+                                <span asp-validation-for="Worker.Salary" class="text-danger"></span>
+                            </td>
+                        </tr>
+                        <!--Email-->
+                        <tr>
+                            <th>
+                                <label asp-for="Worker.Profile.Email">Email</label>
+                            </th>
+                            <td>
+                                <input asp-for="Worker.Profile.Email" class="form-control" />
+                                <span asp-validation-for="Worker.Profile.Email" class="text-danger"></span>
+                            </td>
+                        </tr>
+                        <!--Phone-->
+                        <tr>
+                            <th>
+                                <label asp-for="Worker.Profile.Phone">Телефон</label>
+                            </th>
+                            <td>
+                                <input asp-for="Worker.Profile.Phone" class="form-control" />
+                                <span asp-validation-for="Worker.Profile.Phone" class="text-danger"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><input class="btn btn-outline-success" asp-page-handler="Add" type="submit" value="Сохранить" /></td>
+                            <td><button class="btn btn-outline-danger" data-dismiss="modal">Закрыть</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--CreateModal-->
